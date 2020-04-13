@@ -1,6 +1,6 @@
 TARGET = snack
 DTARGET = snack_debug
-OBJECTS = market.c product.o manager.o saveload.o
+OBJECTS = market.c product.o manager.o saveload.o search.o
 CFLAGS = -W -Wall
 CC = gcc
 
