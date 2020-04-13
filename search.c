@@ -11,6 +11,7 @@ void searchSnackName(Snack *s, int count){
 		if(strstr(s[i].name, search)){
 			printf("%2d", i+1);
 			readSnack(s[i]);
+			printf("\n");
 			scount++;
 		}
 	}
@@ -33,6 +34,7 @@ void searchSnackPrice(Snack *s, int count){
 		if(s[i].price >= min && s[i].price <= max){
 			printf("%2d", i+1);
 			readSnack(s[i]);
+			printf("\n");
 			scount++;
 		}
 	}
@@ -54,6 +56,7 @@ void searchSnackStarNum(Snack *s, int count){
 		if(s[i].starNum >= min && s[i].starNum <= max){
 			printf("%2d", i+1);
 			readSnack(s[i]);
+			printf("\n");
 			scount++;
 		}
 	}

@@ -19,7 +19,7 @@ int loadSnackList(Snack s[]){
                 printf("=> 파일 없음\n");
                 return 0;
         }
-        while(count++){
+        for( ; ; count++){
                 fscanf(fp,"%d %d %d %d %[^\n]", &s[count].price, &s[count].weight, &s[count].standardPrice, &s[count].starNum, s[count].name);
                 if(feof(fp)){
                         break;

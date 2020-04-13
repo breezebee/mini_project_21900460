@@ -9,6 +9,7 @@ void listSnack(Snack *s, int count){
 		}
                 printf("%2d", i+1);
                 readSnack(s[i]);
+		printf("\n");
         }
 }
 int selectSnack(Snack *s, int count){ 
