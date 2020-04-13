@@ -9,12 +9,13 @@ void searchSnackName(Snack *s, int count){
         printf("\n========================================\n");
 	for(int i =0; i<count; i++){
 		if(strstr(s[i].name, search)){
+			printf("%2d", i+1);
 			readSnack(s[i]);
 			scount++;
 		}
 	}
 	if(scount == 0){
-		printf("=> 검색된 데이터 없음!");
+		printf("=> 검색된 데이터 없음!\n");
 	} 
 }
  
@@ -30,12 +31,13 @@ void searchSnackPrice(Snack *s, int count){
         printf("\n========================================\n");
 	for(int i =0; i<count; i++){
 		if(s[i].price >= min && s[i].price <= max){
+			printf("%2d", i+1);
 			readSnack(s[i]);
 			scount++;
 		}
 	}
 	if(scount == 0){
-		printf("검색된 데이터 없음!");
+		printf("검색된 데이터 없음!\n");
 	}
 } 
 void searchSnackStarNum(Snack *s, int count){
@@ -50,12 +52,13 @@ void searchSnackStarNum(Snack *s, int count){
         printf("\n========================================\n");
 	for(int i =0; i<count; i++){
 		if(s[i].starNum >= min && s[i].starNum <= max){
+			printf("%2d", i+1);
 			readSnack(s[i]);
 			scount++;
 		}
 	}
 	if(scount == 0){
-		printf("검색된 데이터 없음!");
+		printf("검색된 데이터 없음!\n");
 	}
 } 
 
