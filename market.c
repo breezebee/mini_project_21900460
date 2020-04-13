@@ -65,13 +65,22 @@ int main(void){
 				printf("데이터가 없습니다!\n");
 			}
 			else{
-				saveSnack(s, curcount);
+				saveSnackList(s, curcount);
 			}
 		}
 		else if (menu == 6){
-
+			int searchMenu;
+			printf("어떤 검색을 하시겠습니까?\n1.이름검색\n2.가격검색\n3.별점검색\n");
+			printf("번호를 고르세요");
+			scanf("%d", &searchMenu);
+			switch(searchMenu){
+				case 1 : searchSnackName(s, curcount); break;
+				case 2 : searchSnackPrice(s,curcount); break;
+				case 3 : searchSnackStarNum(s, curcount); break;
+				default: break;
+			}
 		}	
-        }
+	}
         printf("종료됨!\n");
         return 0;
 }
