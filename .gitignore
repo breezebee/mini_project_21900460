@@ -1,0 +1,4 @@
+snack
+snack_debug
+*.o
+Makefile
