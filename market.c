@@ -10,6 +10,8 @@ int main(void){
         Snack s[100];
         int count = 0, menu = 0;
         int curcount = 0;
+	count = loadSnackList(s);
+	curcount = count;
         while (1){
                 menu = selectMenu();
                 if (menu == 0) break;
