@@ -1,6 +1,7 @@
 #include "product.h"
 #include "manager.h"
 #include "saveload.h"
+#include "search.h"
 
 int main(void){
 #ifdef DEBUG

@@ -3,7 +3,7 @@
 int selectMenu(){ //메뉴를 고른다 (조회, 추가, 수정, 삭제, 저장, 검색, 종료)
 	int menu;
 	printf("\n==과자관리 프로그램==\n");
-	printf("1. 조회\n2. 추가\n3. 수정\n4. 삭제\n0. 종료\n\n");
+	printf("1. 조회\n2. 추가\n3. 수정\n4. 삭제\n5. 저장\n6. 검색\n0. 종료\n\n");
 	printf("원하는 메뉴는? ");
 	scanf("%d", &menu);
 	return menu;
