@@ -1,4 +1,5 @@
 #include "product.h"
 
-void saveSnackList(Snack *s, int count); 
-int loadSnackList(Snack s[]); 
+void saveSnackList(Snack *s, int count);
+int loadSnackList(Snack s[]);
+
