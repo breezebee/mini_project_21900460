@@ -9,7 +9,7 @@ int selectMenu(){ //메뉴를 고른다 (조회, 추가, 수정, 삭제, 저장,
 	return menu;
 }
 void readSnack(Snack s){ //한개의 과자 정보를 읽어온다
-	printf("%8d원 %3dg %7d원 %4d점  %s", s.price, s.weight, s.standardPrice, s.starNum, s.name);
+	printf("%8d원 %3dg %7d원 %4d점  %s\n", s.price, s.weight, s.standardPrice, s.starNum, s.name);
 }
 
 int addSnack(Snack *s){ //과자 정보를 추가한다
