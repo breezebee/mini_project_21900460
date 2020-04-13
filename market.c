@@ -60,6 +60,17 @@ int main(void){
 	printf("\nDebug: [deleteSnack called] count = %d, curcount = %d\n", count, curcount);
 #endif
                 }
+		else if (menu == 5){
+			if(count ==0){
+				printf("데이터가 없습니다!\n");
+			}
+			else{
+				saveSnack(s, curcount);
+			}
+		}
+		else if (menu == 6){
+
+		}	
         }
         printf("종료됨!\n");
         return 0;
