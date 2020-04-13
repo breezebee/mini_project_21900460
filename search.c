@@ -19,7 +19,22 @@ void searchSnackName(Snack *s, int count){
 }
  
 void searchSnackPrice(Snack *s, int count){
-
+	int scount = 0;
+	int min=0, max=0;
+	printf("검색할 최소가격과 최대 가격을 입력하세요(inclusive)");
+	printf("최소가격: ");
+	scanf("%d", min);
+	printf("최대가격: ");
+	scanf("%d", max);
+	for(int i =0; i<count; i++){
+		if(s[i].price >= min && s[i].price <= max){
+			readSnack(s[i]);
+			scount++;
+		}
+	}
+	if(scount == 0){
+		printf("검색된 데이터 없음!");
+	}
 } 
 void searchSnackStarNum(Snack *s, int count){
 
