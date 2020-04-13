@@ -70,7 +70,7 @@ int main(void){
 		}
 		else if (menu == 6){
 			int searchMenu;
-			printf("어떤 검색을 하시겠습니까?\n1.이름검색\n2.가격검색\n3.별점검색\n");
+			printf("어떤 검색을 하시겠습니까?\n1.이름검색\n2.가격검색\n3.별점검색\n\n");
 			printf("번호를 고르세요");
 			scanf("%d", &searchMenu);
 			switch(searchMenu){
